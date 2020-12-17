@@ -1,9 +1,14 @@
 import './App.css';
+import Menu from './components/Menu/Menu'
+import Projects from './components/Projects/Projects'
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello</h1>
+    <div className="app">
+      <div className="app__body">
+        <Menu />
+        <Projects /> 
+      </div>
     </div>
   );
 }
