@@ -1,0 +1,27 @@
+
+.hero {
+    text-align: center;
+}
+.icons {
+    list-style-type:none;
+    display: inline-flex;
+}
+.icons li {
+    padding: 10px;
+}
+
+#avatar {
+    width: 150px;
+    height: 150px;
+}
+.begin {
+    border: 1px solid black;
+    border-radius: 5rem;
+    padding: 5px;
+}
+
+.skills {
+    background-color: lightgrey;
+    height: 100vh;
+   
+}

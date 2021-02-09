@@ -1,16 +1,13 @@
-import './App.css';
-import Menu from './components/Menu/Menu'
-import Projects from './components/Projects/Projects'
+import React from "react";
+import "./App.css";
+import NavigationBar from "./components/Navigation"
 
-function App() {
+export default function App() {
   return (
-    <div className="app">
-      <div className="app__body">
-        <Menu />
-        <Projects /> 
-      </div>
+    <div>
+      <NavigationBar />
+
     </div>
   );
 }
 
-export default App;
