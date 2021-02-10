@@ -1,0 +1,36 @@
+
+// .skills-div {
+    
+//     position: relative;
+//     background-image: linear-gradient(#2396bf, #0d5b77);
+//     z-index: 1;
+//     height:50vh;
+//     margin: 25px;
+//   }
+  
+//   /* where the magic happens */
+//   .skills-div:after {
+//     content: '';
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     background: inherit;
+//     z-index: -1;
+//     bottom: 0;
+//     left: 0;
+//     transform-origin: bottom left;
+//     transform: skewY(7deg);
+    
+//   }
+ 
+.skills {
+    margin:25px;
+}
+#skill-box {
+    
+    padding-bottom: 25px;
+}
+.card {
+    background-image: linear-gradient(#2396bf, #0d5b77);
+    
+}

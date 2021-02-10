@@ -1,27 +1,98 @@
-
 .hero {
     text-align: center;
-}
-.icons {
-    list-style-type:none;
-    display: inline-flex;
-}
-.icons li {
-    padding: 10px;
-}
-
-#avatar {
-    width: 150px;
-    height: 150px;
-}
-.begin {
-    border: 1px solid black;
-    border-radius: 5rem;
-    padding: 5px;
-}
-
-.skills {
-    background-color: lightgrey;
     height: 100vh;
-   
 }
+#about {
+  float: left;
+  padding-top:5%;
+  margin:25px;
+}
+#about-p {
+  float: left;
+  padding-top:25vh;
+  
+  width: 50%;
+  min-width: 200px;
+  text-align: left;
+}
+.intro {
+  position: absolute;
+  margin: 0;
+  padding: 10px;
+  
+  border-radius: 8px;
+  max-width: 500px;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, .15); 
+  backdrop-filter: blur(5px);
+}
+
+#begin-btn {
+color: black;
+border-radius: 4px;
+background-color:white;
+font-size: 20px;
+padding: 5px;
+}
+
+#begin-btn:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.slanted-div {
+    
+    position: relative;
+    background-image: linear-gradient(#2396bf, #0d5b77 40%, #004961 3%, #004961);
+    z-index: 1;
+    height:50vh;
+    margin: 25px;
+  }
+  
+  /* where the magic happens */
+  .slanted-div:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom left;
+    transform: skewY(7deg);
+    
+  }
+  
+  /* displays the content inside, as these settings in the parent breaks the effect */
+  .slanted-div div {
+    text-align: center;
+  }
+  
+  
+  /* responsive */
+  @media only screen
+  and (max-width : 720px) {
+    
+    
+    .intro h1{
+      font-size: 24px;
+    }
+    .intro h3{
+      font-size:18px;
+    }
+   
+    #begin-btn{
+      font-size: 18px;
+    }
+    #about-p {
+      padding-top:10vh;
+      width: 100%;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+  

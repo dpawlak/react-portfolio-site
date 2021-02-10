@@ -1,11 +1,7 @@
 * {
-  box-sizing: border-box;
+  top:0;
   margin: 0;
-  padding: 0;
+  box-sizing: border-box;
   scroll-behavior: smooth;
-  overflow-y: scroll;
-}
-
-.active-link.active {
-  color: red;
+  font-family: sans-serif;
 }

@@ -1,12 +1,16 @@
 import React from "react";
 import "./App.css";
-import NavigationBar from "./components/Navigation"
+import Testing from "./components/Home"
+import Skills from "./components/Skills"
+import Projects from "./components/Projects"
 
 export default function App() {
   return (
     <div>
-      <NavigationBar />
-
+      
+      <Testing />  
+      <Skills />
+      <Projects />
     </div>
   );
 }
