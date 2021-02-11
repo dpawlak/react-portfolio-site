@@ -6,7 +6,7 @@ import Projects from "./components/Projects"
 
 export default function App() {
   return (
-    <div>
+    <div className="app-container">
       
       <Testing />  
       <Skills />

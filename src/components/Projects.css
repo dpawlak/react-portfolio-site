@@ -1,4 +1,9 @@
 .projects {
-    height: 100vh;
-   
+    height: 500px;
+    border-radius:8px;
+    background-color:rgb(240, 212, 126);
+    margin:25px;
+    
+    display:flex;
+    flex-wrap: wrap;
 }

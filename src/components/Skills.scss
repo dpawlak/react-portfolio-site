@@ -1,36 +1,53 @@
 
-// .skills-div {
+.skills-div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
+  }
+  .skill-box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid green;
+    background-color: #efefefef;
+    margin-right: 25px;
+    margin: 10px;
+    border-radius:10px;
+  }
+
+ // Custom scaling for different mobile devices
+  @media only screen
+  and (max-width : 360px) {
+
+    // Moto G4 and Galaxy S5
+      .summary {
+        
+        width:310px;
+        
+        margin:auto;
+        margin-top:125px;
+        padding-top:10px;
+      }
+      .summary-page {
+        border: solid black 1px;
+        height: 500px;
+      }
+      .skills-div {
+        height:600px;
+        width:310px;
+        
+      }
+      
+      .skill-box {
+        color:1px solid black;
+        background: linear-gradient(#c8c8c8 50%,#9d9d9d);
+        border: 1px solid black;
+        width:50%;
+        height:50%;
+        margin:10px;
+        border-radius: 0px;
+        margin:auto;
+      } 
     
-//     position: relative;
-//     background-image: linear-gradient(#2396bf, #0d5b77);
-//     z-index: 1;
-//     height:50vh;
-//     margin: 25px;
-//   }
+
+}
   
-//   /* where the magic happens */
-//   .skills-div:after {
-//     content: '';
-//     width: 100%;
-//     height: 100%;
-//     position: absolute;
-//     background: inherit;
-//     z-index: -1;
-//     bottom: 0;
-//     left: 0;
-//     transform-origin: bottom left;
-//     transform: skewY(7deg);
-    
-//   }
- 
-.skills {
-    margin:25px;
-}
-#skill-box {
-    
-    padding-bottom: 25px;
-}
-.card {
-    background-image: linear-gradient(#2396bf, #0d5b77);
-    
-}

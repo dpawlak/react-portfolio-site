@@ -1,0 +1,15 @@
+#project-box {
+    border: 1px solid red;
+    height:45%;
+    width: 400px;
+    margin: 10px;
+    border-radius:8px;
+    min-width: 200px;
+}
+@media only screen
+  and (max-width : 720px) {
+    #project-box {
+        width:100%;
+        height:90vh;
+    }
+}

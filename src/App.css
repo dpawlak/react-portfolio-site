@@ -4,4 +4,8 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: sans-serif;
+  z-index:1;
+}
+.app-container {
+  left:50%;
 }
