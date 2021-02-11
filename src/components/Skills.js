@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Skills.scss"
-import StorageIcon from '@material-ui/icons/Storage';
+import node from "../images/node.png"
+
 
 export default function Skills() {
     
@@ -10,22 +11,34 @@ export default function Skills() {
         <div className="skills" id="skills">
        
             <div className="summary">
-                <h3 style={{textAlign:'center',textDecoration:'underline'}}>Courses</h3>
+                <h3 style={{textDecoration:'underline'}}>Courses</h3>
                 <p>
                     
                     I have taken courses on Udemy to learn modern
                     web technologies. Every company needs a comfortable
                     mobile application.        
                 </p>
-                <ul>
-                    <li>React</li>
-                    <li>Node</li>
-                    <li>Django</li>
+                <ul style={{listStyleType:"none"}}>
+                    <li>
+                        {/* <Header /> */}
+                        <a>Certificate link</a>
+                    </li>
+                    <li>
+                        {/* <Header /> */}
+                        <a>Certificate link</a>
+                    </li>
+                    <li>
+                        {/* <Header /> */}
+                        <a>Certificate link</a>
+                    </li>
+                    
+                    
+                                
                 </ul>
                 
             </div>
             
-            <h3 style={{textAlign:'center',textDecoration:'underline'}}>Skills and Services</h3>
+            <h3 style={{textDecoration:'underline', paddingLeft:25}}>Skills and Services</h3>
             <p style={{margin:25, textAlign:'justify'}}>
                 Please take a look at the services I offer.
                 My technology stack can be sufficiently used to 
@@ -45,19 +58,31 @@ export default function Skills() {
 }
 
 function SkillBox(props) {
-    const database = <StorageIcon />
-
-
+    // const database = <StorageIcon />
+    
     return (
         <div className="skill-box" id="skill">
-           {database}
+           <img src={node} style={{width:100}}/>
            <h3>{props.name}</h3> 
-           <ul>
-               <li>{props.skill_1}</li>
-               <li>{props.skill_2}</li>
-               <li>{props.skill_3}</li>
-               <li>{props.skill_4}</li>
-           </ul>
+           <div id="skills-list">
+                <div>
+                    
+                    <a id="skill-app">{props.skill_1}</a>
+                </div>
+
+                <div>
+                   <a id="skill-app">{props.skill_2}</a>
+                </div>
+
+                <div>
+                   <a id="skill-app">{props.skill_3}</a>
+                </div>
+
+                <div>
+                   <a id="skill-app">{props.skill_4}</a>
+                </div>
+               
+           </div>
            
         </div>
         

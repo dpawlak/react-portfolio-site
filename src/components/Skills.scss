@@ -2,18 +2,44 @@
 .skills-div {
     display: flex;
     flex-wrap: wrap;
-    margin: 25px;
+    margin:auto;
+    background-color: rgb(247, 191, 140);
+    border-radius: 2rem;
+    margin:25px;
+    height: 100%;
+    
+  }
+  #skills-list {
+    list-style-type: none;
+    text-align: left;
+    display: inline-flex;
+    flex-wrap: wrap;
+    
   }
   .skill-box {
-    width: 200px;
-    height: 200px;
-    border: 1px solid green;
-    background-color: #efefefef;
+    width: 48%;
+    max-width: 500px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .5); 
+    backdrop-filter: blur(10px);
     margin-right: 25px;
     margin: 10px;
-    border-radius:10px;
+    border-radius:2rem;
+    text-align: center;
+    
   }
+.summary {
+  width: 25%;
+  margin-top: 100px;
+  margin-left:25px;
+}
+#skill-app {
 
+  margin:10px;
+  flex:1;
+  
+  
+}
  // Custom scaling for different mobile devices
   @media only screen
   and (max-width : 360px) {
@@ -24,6 +50,7 @@
         width:310px;
         
         margin:auto;
+        
         margin-top:125px;
         padding-top:10px;
       }
@@ -38,13 +65,15 @@
       }
       
       .skill-box {
-        color:1px solid black;
-        background: linear-gradient(#c8c8c8 50%,#9d9d9d);
-        border: 1px solid black;
-        width:50%;
-        height:50%;
-        margin:10px;
-        border-radius: 0px;
+        
+        
+        
+        width: 45%;
+        height: 47.5%;
+        
+        
+        border-radius: 2rem;
+        
         margin:auto;
       } 
     

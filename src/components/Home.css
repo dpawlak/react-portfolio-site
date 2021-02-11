@@ -2,7 +2,7 @@
   position: absolute;
   margin: 0;
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 2rem;
   max-width: 700px;
   top: 50%;
   left: 50%;
@@ -15,7 +15,7 @@
 #begin-btn {
 color: white;
 border: 3px solid white;
-border-radius: 6px;
+border-radius: 2rem;
 background:inherit;
 font-size: 36px;
 padding: 5px;
@@ -34,26 +34,14 @@ padding: 5px;
 
 .slanted-div {  
     position: relative;
-    background: linear-gradient(#0d5b77 50%,#004961);
-    height:85vh;
+    background: linear-gradient(#90cde3 50%,#8cddf8);
+    height:95vh;
     margin: 25px;
+    border-radius: 2rem;
+    
     
   }
   
-  /* where the magic happens */
-  .slanted-div:after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: inherit;
-    z-index: -1;
-    bottom: 0;
-    left: 0;
-    transform-origin: bottom left;
-    transform: skewY(7deg);
-    
-  }
   
   /* displays the content inside, as these settings in the parent breaks the effect */
   .slanted-div div {
@@ -74,7 +62,7 @@ padding: 5px;
 #menuToggle a
 {
   text-decoration: none;
-  color: #cdcdcd;
+  color: black;
   transition: color 0.2s ease;
 }
 
@@ -106,7 +94,7 @@ padding: 5px;
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #cdcdcd;
+  background: black;
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -129,7 +117,7 @@ padding: 5px;
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #cdcdcd;
+  background: black;
 }
 
 
@@ -195,7 +183,7 @@ padding: 5px;
   @media only screen
   and (max-width : 360px) {
     .slanted-div {
-      height: 550px;
+      height: 590px;
     }
     #menu {
       margin: -100px 0 0 -50px;
