@@ -1,0 +1,33 @@
+#sysImg {
+    height:300px;
+}
+#project-selector-header {
+   
+    background-color: red;
+}
+#project-selector-footer {
+    background-image: linear-gradient(to right top, rgb(22, 15, 43), #004d7a, #008793, #00bf72, #a8eb12);
+
+}
+
+#project-selector-btn-list {
+    list-style-type: none;
+    display:flex;
+    align-items: stretch; /* Default */
+    justify-content: space-evenly;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    
+}
+#project-selector-btn-list li{
+    
+    color: rgb(235, 188, 67);
+    padding:5px;
+    border-radius:8px;
+    background-color:black;
+   
+}
+#project-selector-img {
+    width:100%;
+}

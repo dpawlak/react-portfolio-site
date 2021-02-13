@@ -34,7 +34,7 @@ padding: 5px;
 
 .slanted-div {  
     position: relative;
-    background: linear-gradient(#90cde3 50%,#8cddf8);
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     height:95vh;
     margin: 25px;
     border-radius: 2rem;

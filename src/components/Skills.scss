@@ -3,17 +3,43 @@
     display: flex;
     flex-wrap: wrap;
     margin:auto;
-    background-color: rgb(247, 191, 140);
+    background-image: linear-gradient(to bottom right, #a0f0eb, #3daeca, #62d67d );
+    opacity: 0.9;
     border-radius: 2rem;
-    margin:25px;
+    
     height: 100%;
     
   }
+  // #skill-header {
+  //   background-image: linear-gradient(to bottom right, #c7f149, #3bd469, #53c9bf );
+  //   border-radius: 2rem;
+  //   display: flex;
+  //   flex-wrap: wrap;
+   
+   
+  // }
+
+  #link {
+    color:rgb(36, 12, 43);
+    text-decoration: underline;
+    
+    margin:auto;
+
+  }
+  #link:hover {
+    color:rgb(210, 77, 218);
+    cursor: pointer;
+    
+  }
+
+
+  
   #skills-list {
     list-style-type: none;
     text-align: left;
     display: inline-flex;
     flex-wrap: wrap;
+    
     
   }
   .skill-box {
@@ -28,18 +54,35 @@
     text-align: center;
     
   }
-.summary {
-  width: 25%;
-  margin-top: 100px;
-  margin-left:25px;
+#skill-box-avatar {
+  display: flex;
+  margin:auto;
+  margin-top: 10px;
+  color:rgb(65, 175, 168);
+  background-color: black;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
 }
 #skill-app {
-
   margin:10px;
   flex:1;
-  
-  
 }
+
+#decoration-box {
+  text-decoration: none;
+  color:rgb(43, 6, 67);
+  
+  border-radius: 4px;
+  padding:2px;
+  background-color: rgb(214, 244, 163);
+}
+
+#strong-text {
+  color:rgb(11, 28, 54);
+  font-size: 1.1rem;
+}
+
  // Custom scaling for different mobile devices
   @media only screen
   and (max-width : 360px) {
